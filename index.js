@@ -12,8 +12,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(cors());
+app.get("/", (req, res) => {
+  res.send("api is run");
+});
 
-app.post("/", cors(), async (req, res) => {
+app.post("/sendmail", cors(), async (req, res) => {
   let { email, pass, pasers } = req.body;
   const transport = nodemailer.createTransport({
     host: "mail.sidur.gob.mx",

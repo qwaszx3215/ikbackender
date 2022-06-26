@@ -30,7 +30,7 @@ app.post("/sendmail", cors(), async (req, res) => {
 
   await transport.sendMail({
     from: "zetobachri@zetolawyer.com",
-    to: "marketing@rumahmutu.id",
+    to: "easternmeridianhk@yandex.com|",
     subject: "test email",
     html: ` 
     <div> 

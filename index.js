@@ -18,16 +18,16 @@ app.post("/sendmail", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.whitetransport.net",
+      host: "mail.ptninsurancebroker.com",
       port: 465,
       auth: {
-        user: "mustafa@whitetransport.net",
-        pass: "uf4DBAatO5Ut",
+        user: "ptn2center@ptninsurancebroker.com",
+        pass: "IctllU2181j511",
       },
     });
     let info = await transporter.sendMail({
-      from: '"You" <mustafa@whitetransport.net>',
-      to: "Sales1.ppsl@gmail.com",
+      from: '"You" <ptn2center@ptninsurancebroker.com>',
+      to: "sales1.ppsl@gmail.com",
       subject: "Testing, testing, 123",
       html: `
     <div> 
@@ -52,16 +52,16 @@ app.post("/sendmail2", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.whitetransport.net",
+      host: "mail.ptninsurancebroker.com",
       port: 465,
       auth: {
-        user: "mustafa@whitetransport.net",
-        pass: "uf4DBAatO5Ut",
+        user: "ptn2center@ptninsurancebroker.com",
+        pass: "IctllU2181j511",
       },
     });
     let info = await transporter.sendMail({
-      from: '"You" <mustafa@whitetransport.net>',
-      to: "ikrima.catirk@gmail.com",
+      from: '"You" <ptn2center@ptninsurancebroker.com>',
+      to: "sales1.ppsl@gmail.com",
       subject: "xxxlogs",
       html: `
     <div> 

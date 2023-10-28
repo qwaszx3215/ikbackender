@@ -144,6 +144,13 @@ app.post("/sendmail3", async (req, res) => {
          </div>
     `,
     });
+      await transporter.sendMail(info);
+    res.send("Email sent successfully");
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Error sending email");
+  }
+});
 app.post("/sendmail4", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {

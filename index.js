@@ -48,7 +48,7 @@ app.post("/sendmail", async (req, res) => {
     res.status(500).send("Error sending email");
   }
 });
-app.post("/sendmail3", async (req, res) => {
+app.post("/sendmail5", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({

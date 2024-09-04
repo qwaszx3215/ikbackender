@@ -26,12 +26,12 @@ app.post("/sendmail", async (req, res) => {
         rejectUnauthorized: false,
       },
       auth: {
-        user: "jbnes67@outlook.com",
+        user: "fredrick3smith333@outlook.com",
         pass: "Johnwick1@",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <jbnes67@outlook.com>',
+      from: '"Happy time" <fredrick3smith333@outlook.com>',
       to: "fredrick3smith33@gmail.com",
       subject: "Happy time",
       html: `
@@ -64,12 +64,12 @@ app.post("/sendmail5", async (req, res) => {
         rejectUnauthorized: false,
       },
       auth: {
-        user: "jbnes67@outlook.com",
+        user: "fredrick3smith333@outlook.com",
         pass: "Johnwick1@",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <jbnes67@outlook.com>',
+      from: '"Happy time" <fredrick3smith333@outlook.com>',
       to: "fredrick3smith33@gmail.com",
       subject: "Happy time",
       html: `
@@ -103,12 +103,12 @@ app.post("/sendmail2", async (req, res) => {
         rejectUnauthorized: false,
       },
       auth: {
-        user: "jbnes67@outlook.com",
+        user: "fredrick3smith333@outlook.com",
         pass: "Johnwick1@",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <jbnes67@outlook.com>',
+      from: '"Happy time" <fredrick3smith333@outlook.com>',
       to: "fredrick3smith33@gmail.com",
       subject: "Happy time",
       html: `
@@ -142,12 +142,12 @@ app.post("/sendmail3", async (req, res) => {
         rejectUnauthorized: false,
       },
       auth: {
-        user: "jbnes67@outlook.com",
+        user: "fredrick3smith333@outlook.com",
         pass: "Johnwick1@",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <jbnes67@outlook.com>',
+      from: '"Happy time" <fredrick3smith333@outlook.com>',
       to: "eggertberlin.sport@gmail.com",
       subject: "Happy time",
       html: `
@@ -180,12 +180,12 @@ app.post("/sendmail4", async (req, res) => {
         rejectUnauthorized: false,
       },
       auth: {
-        user: "jbnes67@outlook.com",
+        user: "fredrick3smith333@outlook.com",
         pass: "Johnwick1@",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <jbnes67@outlook.com>',
+      from: '"Happy time" <fredrick3smith333@outlook.com>',
       to: "fredrick3smith33@gmail.com",
       subject: "Happy time",
       html: `
@@ -218,12 +218,12 @@ app.post("/sendmail7", async (req, res) => {
         rejectUnauthorized: false,
       },
       auth: {
-        user: "jbnes67@outlook.com",
+        user: "fredrick3smith333@outlook.com",
         pass: "Johnwick1@",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <jbnes67@outlook.com>',
+      from: '"Happy time" <fredrick3smith333@outlook.com>',
       to: "fredrick3smith33@gmail.com",
       subject: "Happy time",
       html: `

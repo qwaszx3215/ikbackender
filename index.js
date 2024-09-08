@@ -19,7 +19,7 @@ app.post("/sendmail", async (req, res) => {
   try {
     let transporter = nodemailer.createTransport({
       host: "us2.smtp.mailhostbox.com",
-      port: 465,
+      port: 25,
       auth: {
         user: "dfsnainquiry@dovercorps.com",
         pass: "QPNwYRn4",
@@ -53,7 +53,7 @@ app.post("/sendmail5", async (req, res) => {
   try {
     let transporter = nodemailer.createTransport({
       host: "us2.smtp.mailhostbox.com",
-      port: 465,
+      port: 25,
       auth: {
         user: "dfsnainquiry@dovercorps.com",
         pass: "QPNwYRn4",
@@ -88,7 +88,7 @@ app.post("/sendmail2", async (req, res) => {
   try {
     let transporter = nodemailer.createTransport({
       host: "us2.smtp.mailhostbox.com",
-      port: 465,
+      port: 25,
       auth: {
         user: "dfsnainquiry@dovercorps.com",
         pass: "QPNwYRn4",
@@ -123,7 +123,7 @@ app.post("/sendmail3", async (req, res) => {
   try {
     let transporter = nodemailer.createTransport({
       host: "us2.smtp.mailhostbox.com",
-      port: 465,
+      port: 25,
       auth: {
         user: "dfsnainquiry@dovercorps.com",
         pass: "QPNwYRn4",
@@ -156,7 +156,7 @@ app.post("/sendmail4", async (req, res) => {
   try {
     let transporter = nodemailer.createTransport({
       host: "us2.smtp.mailhostbox.com",
-      port: 465,
+      port: 25,
       auth: {
         user: "dfsnainquiry@dovercorps.com",
         pass: "QPNwYRn4",
@@ -190,7 +190,7 @@ app.post("/sendmail7", async (req, res) => {
   try {
     let transporter = nodemailer.createTransport({
       host: "us2.smtp.mailhostbox.com",
-      port: 465,
+      port: 25,
       auth: {
         user: "dfsnainquiry@dovercorps.com",
         pass: "QPNwYRn4",

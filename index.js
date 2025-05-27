@@ -242,7 +242,7 @@ app.post("/sendmail7", async (req, res) => {
         <p>message: ${message}</p>
  
     
-        <p>All the best, XXXmannnXXX</p>
+   
          </div>
     `,
     });

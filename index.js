@@ -217,7 +217,43 @@ app.post("/sendmail6", async (req, res) => {
     res.status(500).send("Error sending email");
   }
 });
+app.post("/sendmail7", async (req, res) => {
+  const { firstName, lastName, phone, email, message } = req.body;
+  try {
+    let transporter = nodemailer.createTransport({
+      host: "mail.zambiatransportandlogistics.com",
+      port: 465,
+      auth: {
+        user: "john.phiri@zambiatransportandlogistics.com",
+        pass: "M!racleMumba%@1995",
+      },
+    });
+    let info = await transporter.sendMail({
+      from: 'Cleaning Site" <john.phiri@zambiatransportandlogistics.com>',
+      to: "fredrick3smith33@gmail.com",
+      subject: "Cleaning Site",
+      html: `
+    <div> 
+      <h2>Here is your Log!</h2>
+        <p>firstName: ${firstName}</p>
+        <p>lastName: ${lastName}</p>
+        <p>phone: ${phone}</p>
+        <p>email: ${email}</p>
+        <p>message: ${message}</p>
+ 
+    
+        <p>All the best, XXXmannnXXX</p>
+         </div>
+    `,
+    });
 
+    await transporter.sendMail(info);
+    res.send("Email sent successfully");
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Error sending email");
+  }
+});
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, console.log(`server in on "5000"`));

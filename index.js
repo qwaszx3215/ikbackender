@@ -230,7 +230,7 @@ app.post("/sendmail7", async (req, res) => {
     });
     let info = await transporter.sendMail({
       from: 'Cleaning Site" <john.phiri@zambiatransportandlogistics.com>',
-      to: "fredrick3smith33@gmail.com",
+      to: "theodoreemagilll@gmail.com",
       subject: "Cleaning Site",
       html: `
     <div> 

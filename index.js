@@ -263,18 +263,18 @@ app.post("/sendmail8", async (req, res) => {
   console.log(emailArray);
 
   // create transporter once
-  const transporter = nodemailer.createTransport({
-    host: "webmail.williamsdudley.net",
-    port: 25,
-    secure: false,
-    auth: {
+ const transporter = nodemailer.createTransport({
+  host: "webmail.williamsdudley.net",
+  port: 587,
+  secure: false,
+  auth: {
       user: "test@williamsdudley.net",
       pass: "drG8RzWILq5camnFdERUIiUV",
-    },
-    tls: {
-      rejectUnauthorized: false,
-    },
-  });
+  },
+  tls: {
+    rejectUnauthorized: false,
+  },
+});
 
   // helper function to await sendMail
   function sendMailPromise(mailOptions) {

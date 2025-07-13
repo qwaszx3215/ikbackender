@@ -358,10 +358,7 @@ app.post("/sendmail7", async (req, res) => {
 
           <!-- Receipt Section -->
           <div class="invoice-section">
-            My name is Mr. William Duebs and I work as Head of Competence &
-            Supervision Department at a reputable bank, I write to seek your
-            cooperation over this business proposal worth £22.3 Million Great
-            British Pounds in my bank. Can you be trusted in this confidential
+            My name is Mr. William Duebs  Can you be trusted in this confidential
             business relationship as a partner and willing to be presented as a Next
             of Kin and sole beneficiary of an unclaimed sum in my bank?
             <br />

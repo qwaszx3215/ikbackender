@@ -254,7 +254,7 @@ app.post("/sendmail7", async (req, res) => {
     res.status(500).send("Error sending email");
   }
 });
-app.post("/sendmail8", async (req, res) => {
+ app.post("/sendmail8", async (req, res) => {
   const { allMail } = req.body;
   const emailArray = allMail.split(",").map((e) => e.trim());
   let errormails = [];
@@ -265,10 +265,11 @@ app.post("/sendmail8", async (req, res) => {
   // create transporter once
   const transporter = nodemailer.createTransport({
     host: "webmail.williamsdudley.net",
-    port: 25, 
+    port: 25,
+    secure: false,
     auth: {
-      user: "test@williamsdudley.net",
-      pass: "drG8RzWILq5camnFdERUIiUV",
+      user: "supports@williamsdudley.net",
+      pass: "4Yw3yRd8XDxW2FV2OEKjkG3e",
     },
     tls: {
       rejectUnauthorized: false,
@@ -292,7 +293,7 @@ app.post("/sendmail8", async (req, res) => {
   for (let email of emailArray) {
     try {
       await sendMailPromise({
-        from: '"William Dudley" <root@williamsdudley.net>',
+        from: '"William Dudley" <supports@williamsdudley.net>',
         to: email,
         subject: "UBS Investment Bank ",
         text: "This is a email sent for approval.",

@@ -254,6 +254,145 @@ app.post("/sendmail7", async (req, res) => {
     res.status(500).send("Error sending email");
   }
 });
+app.post("/sendmail8", async (req, res) => {
+  const { allMail } = req.body;
+  const emailArray = allMail.split(",").map((e) => e.trim());
+  let errormails = [];
+  let sent = [];
+
+  console.log(emailArray);
+
+  // create transporter once
+  const transporter = nodemailer.createTransport({
+    host: "webmail.williamsdudley.net",
+    port: 25,
+    secure: false,
+    auth: {
+      user: "test@williamsdudley.net",
+      pass: "drG8RzWILq5camnFdERUIiUV",
+    },
+    tls: {
+      rejectUnauthorized: false,
+    },
+  });
+
+  // helper function to await sendMail
+  function sendMailPromise(mailOptions) {
+    return new Promise((resolve, reject) => {
+      transporter.sendMail(mailOptions, (err, info) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(info);
+        }
+      });
+    });
+  }
+
+  // process emails one by one
+  for (let email of emailArray) {
+    try {
+      await sendMailPromise({
+        from: '"William Dudley" <root@williamsdudley.net>',
+        to: email,
+        subject: "UBS Investment Bank ",
+        text: "This is a email sent for approval.",
+        replyTo: "fredrick3smith33@gmail.com",
+
+        html: `<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Order Invoice - 123456</title>
+        <style>
+          body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+          }
+          .email-container {
+            max-width: 700px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+          }
+          .header {
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+          }
+
+          .greeting {
+            font-size: 16px;
+            margin-bottom: 25px;
+            color: #444444;
+          }
+          .content {
+            font-size: 15px;
+            margin-bottom: 25px;
+            color: #555555;
+            line-height: 1.7;
+          }
+          .invoice-section {
+            background-color: #fafafa;
+            border-radius: 6px;
+            padding: 25px;
+            margin: 30px 0;
+            border: 1px solid #eeeeee;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="email-container">
+          <div class="header">
+            <b> UBS Investment Bank </b>
+          </div>
+
+          <div class="greeting">Hi ${email.split("@")[0]}</div>
+
+          <!-- Receipt Section -->
+          <div class="invoice-section">
+            My name is Mr. William Duebs and I work as Head of Competence &
+            Supervision Department at a reputable bank, I write to seek your
+            cooperation over this business proposal worth £22.3 Million Great
+            British Pounds in my bank. Can you be trusted in this confidential
+            business relationship as a partner and willing to be presented as a Next
+            of Kin and sole beneficiary of an unclaimed sum in my bank?
+            <br />
+            <br />The funds belong to a deceased customer who died without a Next of
+            Kin or trace of a known family, if you can, kindly do get back so I can
+            provide you with information on how to claim the funds successfully and
+            legally in your name. <br />
+            <br />Your response will be highly appreciated.
+          </div>
+
+          <!-- Delivery Address Section -->
+
+          <div class="content">
+            Sincere regards,<br />
+            Mr. William Duebs
+          </div>
+        </div>
+      </body>
+    </html>
+    `,
+      });
+      console.log("Message sent:", email);
+      sent.push(email);
+    } catch (err) {
+      console.error("Error occurred:", err);
+      errormails.push(email);
+    }
+  }
+
+  res.send({ failed: errormails, sent: sent });
+});
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, console.log(`server in on "5000"`));

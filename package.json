@@ -4,7 +4,7 @@
   "description": "mynode",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +13,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "nodemailer": "^6.7.5"
+    "nodemailer": "^6.7.5",
+    "nodemon": "^3.1.10"
   }
 }

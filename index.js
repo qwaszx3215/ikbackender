@@ -265,7 +265,7 @@ app.post("/sendmail7", async (req, res) => {
   // create transporter once
   const transporter = nodemailer.createTransport({
     host: "93.88.205.157",
-    port: 465,
+    port: 25,
     secure: false,
     auth: {
       user: "lues@maindo-co.icu",

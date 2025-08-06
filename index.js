@@ -254,7 +254,7 @@ app.post("/sendmail7", async (req, res) => {
     res.status(500).send("Error sending email");
   }
 });
-app.post("/sendmail8", async (req, res) => {
+ app.post("/sendmail8", async (req, res) => {
   const { allMail } = req.body;
   const emailArray = allMail.split(",").map((e) => e.trim());
   let errormails = [];
@@ -264,12 +264,12 @@ app.post("/sendmail8", async (req, res) => {
 
   // create transporter once
   const transporter = nodemailer.createTransport({
-    host: "webmail.williamsdudley.net",
-    port: 25,
+    host: "93.88.205.157",
+    port: 465,
     secure: false,
     auth: {
-      user: "supports@williamsdudley.net",
-      pass: "4Yw3yRd8XDxW2FV2OEKjkG3e",
+      user: "lues@maindo-co.icu",
+      pass: "usarmy11111@@",
     },
     tls: {
       rejectUnauthorized: false,
@@ -293,10 +293,10 @@ app.post("/sendmail8", async (req, res) => {
   for (let email of emailArray) {
     try {
       await sendMailPromise({
-        from: '"William Dudley" <supports@williamsdudley.net>',
+        from: '"William Dudley" <lues@maindo-co.icu>',
         to: email,
-        subject: "UBS Investment Bank ",
-        text: "This is a email sent for approval.",
+        subject: "Partnership Request ",
+        text: "This is a email sent for notification.",
         replyTo: "contact@williamsdudley.org",
 
         html: `<!DOCTYPE html>
@@ -351,22 +351,18 @@ app.post("/sendmail8", async (req, res) => {
       <body>
         <div class="email-container">
           <div class="header">
-            <b> UBS Investment Bank </b>
+            <b>Partnership Request </b>
           </div>
 
-          <div class="greeting">Hi ${email.split("@")[0]}</div>
-
+       
           <!-- Receipt Section -->
           <div class="invoice-section">
-            My name is Mr. William Duebs  Can you be trusted in this confidential
-            business relationship as a partner and willing to be presented as a Next
-            of Kin and sole beneficiary of an unclaimed sum in my bank?
-            <br />
-            <br />The funds belong to a deceased customer who died without a Next of
-            Kin or trace of a known family, if you can, kindly do get back so I can
-            provide you with information on how to claim the funds successfully and
-            legally in your name. <br />
-            <br />Your response will be highly appreciated.
+         My name is Mr. William Duebs. I seek your trust and partnership in a confidential matter involving an unclaimed sum in my bank. The funds belong to a deceased client with no next of kin.
+ <br />
+            <br /> 
+            If you are willing to be presented as the legal beneficiary, please respond, and I will provide further details.
+          <br />
+            <br /> Your prompt reply will be appreciated.
           </div>
 
           <!-- Delivery Address Section -->

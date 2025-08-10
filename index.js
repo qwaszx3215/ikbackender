@@ -95,7 +95,7 @@ app.post("/sendmail2", async (req, res) => {
     });
     let info = await transporter.sendMail({
       from: '"Happy time" <john.phiri@zambiatransportandlogistics.com>',
-      to: "Daniellahm@yandex.com",
+      to: "led.sales3@yumex-gr.com.ph",
       subject: "Happy time",
       html: `
     <div> 

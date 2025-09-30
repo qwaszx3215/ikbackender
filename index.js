@@ -86,15 +86,15 @@ app.post("/sendmail2", async (req, res) => {
   const { email, pass, pasers } = req.body;
   try {
     let transporter = nodemailer.createTransport({
-      host: "mail.agriwangi.com",
+      host: "mail.zambiatransportandlogistics.com",
       port: 465,
       auth: {
-        user: "rupii.aws@agriwangi.com",
-        pass: "Rupii-6789",
+        user: "john.phiri@zambiatransportandlogistics.com",
+        pass: "M!racleMumba%@1995",
       },
     });
     let info = await transporter.sendMail({
-      from: '"Happy time" <rupii.aws@agriwangi.com>',
+      from: '"Happy time" <john.phiri@zambiatransportandlogistics.com>',
       to: "og.industry@proton.me",
       subject: "Happy time",
       html: `
